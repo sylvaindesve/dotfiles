@@ -4,4 +4,5 @@
 
 set anti
 set guioptions=gemc
+colorscheme ir_black
 
