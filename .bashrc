@@ -70,7 +70,21 @@ PATH="$HOME/bin:$PATH"
 # ALIASES
 # ----------------------------------------------------------------------
 
-alias la="ls -la"
+# ----------------------------------------------------------------------
+# LS
+# ----------------------------------------------------------------------
+
+# common ls options
+LS_COMMON="-hBG"
+
+# always use common ls options
+test -n "$LS_COMMON" &&
+alias ls="command ls $LS_COMMON"
+
+# show files and dirs as a list
+alias ll="ls -l"
+# show hidden files
+alias l.="ls -d .*"
 
 # -------------------------------------------------------------------
 # USER SHELL ENVIRONMENT
