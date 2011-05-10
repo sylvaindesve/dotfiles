@@ -1,0 +1,14 @@
+[user]
+    name = Sylvain Desvé
+    email = sylvain.desve@gmail.com
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+
