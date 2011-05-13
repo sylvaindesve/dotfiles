@@ -11,4 +11,5 @@
     br = branch
     co = checkout
     df = diff
+    ll = log --pretty=oneline --abbrev-commit --max-count=15
 
