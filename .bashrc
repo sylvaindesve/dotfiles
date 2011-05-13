@@ -71,7 +71,7 @@ PATH="$HOME/bin:$PATH"
 # ----------------------------------------------------------------------
 
 # Test for vim or gvim
-HAVE_VIM=${command -v vim}
+HAVE_VIM=$(command -v vim)
 
 test -n "$HAVE_VIM" &&
 EDITOR=vim ||
