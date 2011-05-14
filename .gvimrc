@@ -4,24 +4,25 @@
 
 set anti
 set guioptions=gemc
-colorscheme ir_black
+
+set background=dark
+colorscheme solarized
+
+" map ToggleBG to F5
+call togglebg#map("<F5>")
 
 " -----------------------------------------------------------
-"  Ack
+"  Mappings
 " -----------------------------------------------------------
 
-" Start Ack with Command-Shift-T
 if has("gui_macvim")
-  macmenu &File.Open\ Tab\.\.\. key=<nop>
-  map <D-T> :Ack<space>
-endif
+  " Command-Return to toggle full screen mode
+  macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
-" -----------------------------------------------------------
-"  Command-T
-" -----------------------------------------------------------
+  " Start Ack with Command-Shift-F
+  map <D-F> :Ack<space>
 
-" Start Command-T with ... Command-T
-if has("gui_macvim")
+  " Start Command-T with ... Command-T
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
 endif
