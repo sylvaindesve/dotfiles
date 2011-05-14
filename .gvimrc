@@ -16,3 +16,13 @@ if has("gui_macvim")
   map <D-T> :Ack<space>
 endif
 
+" -----------------------------------------------------------
+"  Command-T
+" -----------------------------------------------------------
+
+" Start Command-T with ... Command-T
+if has("gui_macvim")
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> :CommandT<CR>
+endif
+
