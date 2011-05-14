@@ -46,6 +46,7 @@ set backspace=2                   " Backspace over everything in insert mode
 " VISUAL
 " ---------------------------------------------------------------------------
 
+set incsearch                     " Show search result as it is typed
 set visualbell                    " Don't beep
 set laststatus=2                  " Status line always visible
 
