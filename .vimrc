@@ -71,3 +71,9 @@ au BufRead,BufNewFile Gemfile                         set ft=ruby
 au BufRead,BufNewFile *.ru                            set ft=ruby
 au BufRead,BufNewFile *.json                          set ft=javascript
 
+" ---------------------------------------------------------------------------
+" NerdTree
+" ---------------------------------------------------------------------------
+
+map <Leader>n :NERDTreeToggle<CR>
+
