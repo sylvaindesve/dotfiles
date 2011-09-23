@@ -25,5 +25,21 @@ if has("gui_macvim")
   " Start Command-T with ... Command-T
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
+
+  " Control-Option to switch viewports
+  map <C-M-Up> <C-w>k
+  imap <C-M-Up> <Esc> <C-w>k
+  map <C-M-Down> <C-w>j
+  imap <C-M-Down> <Esc> <C-w>j
+  map <C-M-Right> <C-w>l
+  imap <C-M-Right> <Esc> <C-w>l
+  map <C-M-Left> <C-w>h
+  imap <C-M-Left> <C-w>h
+
+  " Command-Option-ArrowKey to switch tabs
+  map <D-M-Right> :tabnext<CR>
+  imap <D-M-Right> <Esc>:tabnext<CR>
+  map <D-M-Left> :tabprevious<CR>
+  imap <D-M-Right> <Esc>:tabnext<CR>
 endif
 
