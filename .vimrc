@@ -15,18 +15,19 @@ set autoread                      " Reload files
 " Colors and themes
 " ---------------------------------------------------------------------------
 
+" When using GUI, turn syntax highlighting on
 if has("gui_running")
   syntax on
 endif
 
 " ---------------------------------------------------------------------------
-" Trailing whitespace
+" Trailing whitespace and tabs
 " ---------------------------------------------------------------------------
 
 set list listchars=tab:\ \ ,trail:·
 
 " ---------------------------------------------------------------------------
-" Backups
+" Backups and swap files
 " ---------------------------------------------------------------------------
 
 set backupdir=~/.vim/backup
@@ -43,7 +44,7 @@ set ch=2                          " Command line height
 set backspace=2                   " Backspace over everything in insert mode
 
 " ---------------------------------------------------------------------------
-" VISUAL
+" Visual
 " ---------------------------------------------------------------------------
 
 set incsearch                     " Show search result as it is typed
