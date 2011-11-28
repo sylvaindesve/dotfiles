@@ -1,0 +1,9 @@
+# ack configuration
+
+# add cucumber feature files
+--type-set
+cucumber=.feature
+
+# add coffee script files
+--type-set
+coffee=.coffee
