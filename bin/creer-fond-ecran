@@ -1,0 +1,6 @@
+#/bin/sh
+
+for i in $*
+do
+  convert $i -bordercolor "#000000" -border 5x5 -gravity center -background white -extent 1440x900 "${i%.*}-fond-ecran.${i#*.}"
+done
