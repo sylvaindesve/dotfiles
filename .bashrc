@@ -64,7 +64,7 @@ prompt_color() {
 PATH="/usr/local/bin:$PATH"
 
 test -d "$HOME/bin" &&
-PATH="$HOME/bin:$PATH"
+PATH="$HOME/bin:$HOME/.rvm/bin:/usr/local/share/npm/bin:$PATH"
 
 # ----------------------------------------------------------------------
 # EDITOR
@@ -135,3 +135,9 @@ test -r ~/.shenv &&
 test -n "$PS1" &&
 prompt_color
 
+# -------------------------------------------------------------------
+# RVM
+# -------------------------------------------------------------------
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
