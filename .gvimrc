@@ -5,8 +5,15 @@
 set anti
 set guioptions=gemc
 
-set background=dark
 colorscheme solarized
+set background=dark
+
+" Fix vim-gitgutter sign-column contrast issue with Solarized theme
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=green guifg=darkgreen
+highlight GitGutterChange ctermfg=yellow guifg=darkyellow
+highlight GitGutterDelete ctermfg=red guifg=darkred
+highlight GitGutterChangeDelete ctermfg=yellow guifg=darkyellow
 
 " map ToggleBG to F5
 call togglebg#map("<F5>")
