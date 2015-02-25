@@ -11,6 +11,13 @@ colorscheme solarized
 " map ToggleBG to F5
 call togglebg#map("<F5>")
 
+if has('gui_running')
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
+
+  " vim-airline
+  let g:airline_powerline_fonts = 1
+endif
+
 " -----------------------------------------------------------
 "  Mappings
 " -----------------------------------------------------------
