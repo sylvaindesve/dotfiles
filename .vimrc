@@ -7,11 +7,12 @@ call pathogen#helptags()
 " ---------------------------------------------------------------------------
 
 set nocompatible                  " VIM mode (not VI)
-set cf                            " Raise a dialog instead of sending errors
-set ffs=unix,dos,mac              " End of line format
+set confirm                       " Raise a dialog instead of sending errors
+set fileformats=unix,dos,mac      " End of line format
 set encoding=utf-8                " Encoding is UTF8
-filetype plugin indent on         " Load plugin and indent settings
-set isk+=_,$,@,%,#,-              " None word dividers
+filetype plugin indent on         " Load plugin and indent settings based on
+                                  " file type
+set iskeyword+=_,$,@,%,#,-        " None word dividers
 set autoread                      " Reload files
 
 " ---------------------------------------------------------------------------
@@ -48,7 +49,7 @@ set wildmenu                      " Allow completion in command mode
 set wildmode=list:longest,full    " First <Tab> complete to longest common
                                   " string and show list of matches, second
                                   " <Tab> cycle through matches
-set ch=2                          " Command line height
+set cmdheight=2                   " Command line height
 set backspace=2                   " Backspace over everything in insert mode
 set whichwrap+=<,>,h,l,[,]        " Left and right go to next/previous line
                                   " when at the end/beginning of a line
@@ -61,7 +62,7 @@ set nostartofline                 " Don't move cursor to start of line when
 " ---------------------------------------------------------------------------
 
 set showmatch                     " Show matching brace/bracket/parenthese...
-set mat=5                         " ...for half a second.
+set matchtime=5                   " ...for half a second.
 set laststatus=2                  " Status line always visible
 set incsearch                     " Show search result as it is typed
 set nohlsearch                    " Don't highlight searches
@@ -88,6 +89,11 @@ set virtualedit=block
 " ---------------------------------------------------------------------------
 
 let mapleader = ","
+
+" Edit .vimrc
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+" Source .vimrc
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " ---------------------------------------------------------------------------
 " File types
