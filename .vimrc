@@ -95,6 +95,12 @@ nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
 " Source .vimrc
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
+" TODO file
+nnoremap <Leader>o o[ ] 
+nnoremap <Leader>O O[ ] 
+nnoremap <Leader>x :s/^\[ \]/[x]/<CR>
+nnoremap <Leader>X :s/^\[x\]/[ ]/<CR>
+
 " ---------------------------------------------------------------------------
 " File types
 " ---------------------------------------------------------------------------
