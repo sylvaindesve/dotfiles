@@ -95,6 +95,11 @@ nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
 " Source .vimrc
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
+" Edit .gvimrc
+nnoremap <Leader>eg :vsplit $MYGVIMRC<CR>
+" Source .gvimrc
+nnoremap <Leader>sg :source $MYGVIMRC<CR>
+
 " TODO file
 nnoremap <Leader>o o[ ] 
 nnoremap <Leader>O O[ ] 
