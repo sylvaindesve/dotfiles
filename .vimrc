@@ -105,10 +105,12 @@ nnoremap <Leader>X :s/^\[x\]/[ ]/<CR>
 " File types
 " ---------------------------------------------------------------------------
 
-au BufRead,BufNewFile Rakefile                        set ft=ruby
-au BufRead,BufNewFile Gemfile                         set ft=ruby
-au BufRead,BufNewFile *.ru                            set ft=ruby
-au BufRead,BufNewFile *.json                          set ft=javascript
+autocmd BufRead,BufNewFile Rakefile     setlocal filetype=ruby
+autocmd BufRead,BufNewFile Gemfile      setlocal filetype=ruby
+autocmd BufRead,BufNewFile *.ru         setlocal filetype=ruby
+autocmd BufRead,BufNewFile *.json       setlocal filetype=javascript
+
+autocmd BufRead,BufNewFile *.csv        setlocal textwidth=0
 
 " ---------------------------------------------------------------------------
 " NerdTree
