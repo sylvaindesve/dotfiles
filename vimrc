@@ -34,8 +34,8 @@ set list listchars=tab:\ \ ,trail:·
 " Backups and swap files
 " ---------------------------------------------------------------------------
 
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set backupdir=~/.vimbackup
+set directory=~/.vimbackup
 
 " ---------------------------------------------------------------------------
 " UI
