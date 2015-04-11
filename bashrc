@@ -126,10 +126,8 @@ alias l.="ls -d .*"
 # USER SHELL ENVIRONMENT
 # -------------------------------------------------------------------
 
-# load custom script
-# this is where personal stuff is set
-test -r ~/.shenv &&
-. ~/.shenv
+# Sourcing personal script
+[ -r .extra ] && [ -f .extra ] && source .extra
 
 # Use the color prompt by default when interactive
 test -n "$PS1" &&
