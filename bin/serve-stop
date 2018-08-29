@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Stop the hot nginx server
+
+docker stop hot-nginx && \
+  docker rm hot-nginx && \
+  echo "Server stopped!"

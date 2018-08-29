@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Start a nginx server within a Docker container to serve content
+# of the current directory.
+
+docker run \
+      --name hot-nginx `# name of the container` \
+      -v "$PWD":/usr/share/nginx/html:ro `# bind mount current directory in read-only mode` \
+      -p 8080:80 `# forward port 80 of container to port 8080 on host` \
+      -d `# detach and run in background` \
+      nginx `# image to use` &&  \
+  echo "Server started! Run serve-stop to stop." && \
+  open "http://localhost:8080"
