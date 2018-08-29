@@ -81,7 +81,6 @@ set shiftwidth=2
 set tabstop=4
 set expandtab                     " Expand tabs to spaces
 set nosmarttab                    " No tabs
-set textwidth=80                  " Go to next line if > 80 chars
 set virtualedit=block
 
 " ---------------------------------------------------------------------------
@@ -123,3 +122,8 @@ autocmd BufRead,BufNewFile *.csv        setlocal textwidth=0
 
 map <Leader>n :NERDTreeToggle<CR>
 
+" ---------------------------------------------------------------------------
+" DBExt
+" ---------------------------------------------------------------------------
+
+let g:dbext_default_profile_sqlite_test = 'type=SQLITE:dbname=/Users/sylvaindesve/Developer/sqlite/test.db'
