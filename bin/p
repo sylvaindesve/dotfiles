@@ -1,6 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # Usage: p <expr>
 # Print arbitrary Ruby expression <expr>.
 # Stolen from rtomayko's dotfiles (http://tomayko.com/)
 ruby -e "p($*)"
-

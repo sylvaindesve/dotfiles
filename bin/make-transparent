@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for i in $*
+do
+  convert $i -median 2 -fuzz 5% -transparent white "${i%.*}-transparent.${i#*.}"
+done
