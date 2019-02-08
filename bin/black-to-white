@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for i in $*
+do
+  convert $i -channel RGB -negate "${i%.*}-white.${i#*.}"
+done
