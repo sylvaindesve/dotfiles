@@ -66,6 +66,9 @@ PATH="/usr/local/bin:$PATH"
 test -d "$HOME/bin" &&
 PATH="$HOME/bin:$HOME/.rvm/bin:/usr/local/share/npm/bin:$PATH"
 
+# sqlite
+PATH="/usr/local/opt/sqlite/bin:$PATH"
+
 # .local est le répertoire de Stack (Haskell)
 test -d "$HOME/.local/bin" &&
 PATH="$HOME/.local/bin:$PATH"

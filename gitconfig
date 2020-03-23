@@ -13,3 +13,10 @@
     df = diff
     ll = log --pretty=oneline --abbrev-commit --max-count=15
 
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
